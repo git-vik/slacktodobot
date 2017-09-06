@@ -1,0 +1,385 @@
+<!doctype html>
+<html class="fsvs" lang="en">
+    <head>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link href="assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="assets/css/swiper.min.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="assets/css/remodal-default-theme.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="assets/css/custom.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="assets/css/remodal-bundle.css" media="all" rel="stylesheet" type="text/css" />
+        <script src="assets/js/jquery-1.11.0.min.js"></script>
+        <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="assets/js/bundle.js"></script>
+        <script>
+            window.REMODAL_GLOBALS = {
+                NAMESPACE: 'remodal',
+                DEFAULTS: {
+                    hashTracking: false
+                }
+            };
+        </script>
+        <script src="assets/js/remodal.min.js"></script>
+        <script src="assets/js/swiper.min.js"></script>
+        <script>
+        jQuery(document).ready(function($){
+            var slider = $.fn.fsvs({
+                autoPlay            : false,
+                speed               : 300,
+                bodyID              : 'fsvs-body',
+                selector            : '> .slide',
+                mouseSwipeDisance   : 40,
+                afterSlide          : function(){},
+                beforeSlide         : function(){},
+                endSlide            : function(){},
+                mouseWheelEvents    : true,
+                mouseWheelDelay     : false,
+                mouseDragEvents     : false,
+                touchEvents         : false,
+                arrowKeyEvents      : true,
+                pagination          : true,
+                nthClasses          : 2,
+                detectHash          : false
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div class="remodal-bg">
+            <div data-remodal-id="demomodal">
+                <!-- <button data-remodal-action="close" class="remodal-close"></button> -->
+                <h1 class="remodal-heading">PLEASE FILL DETAILS</h1>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input name="fname" type="text" class="form-control" placeholder="First Name*" />
+                        <input name="lname" type="email" class="form-control" placeholder="Last Name" />
+                    </div>
+                    <div class="form-group">
+                        <input name="contact" type="text" class="form-control" placeholder="Contact Number*">
+                        <select name="country" class="form-control">
+                            <option value="" selected disabled>Select Country*</option>
+                            <option value="india">India</option>
+                            <option value="srilanka">Sri Lanka</option>
+                        </select>
+                    </div>
+                    <div class="form-group-fw form-group">
+                        <input name="email" type="email" class="form-control" placeholder="Email*" />
+                    </div>
+                    <div class="form-group-fw form-group">
+                        <input name="subject" type="text" class="form-control" placeholder="Subject" />
+                    </div>
+                    <div class="form-group-fw">
+                        <textarea name="message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <p class="server-message"></p>
+                    <a href="javascript:void(0)" class="try-demo submit-demo-form">Submit</a>
+                </form>
+                <br>
+                <!-- <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button> -->
+                <!-- <button data-remodal-action="confirm" class="remodal-confirm">OK</button> -->
+            </div>
+        </div>
+        <div class="remodal-bg">
+            <div data-remodal-id="loginmodal">
+                <!-- <button data-remodal-action="close" class="remodal-close"></button> -->
+                <h1 class="remodal-heading">PLEASE FILL DETAILS</h1>
+                <form class="form-inline">
+                    <div class="form-group-fw form-group">
+                        <input name="loginemail" type="email" class="form-control" placeholder="Email" />
+                    </div>
+                    <div class="form-group-fw form-group">
+                        <input name="loginpassword" type="password" class="form-control" placeholder="Password" />
+                    </div>
+                    <div class="form-group-fw">
+                         <label for="rem" class="rem"><input type="checkbox" id="rem" />Remember</label>
+                    </div>
+                    <p class="server-message"></p>
+                    <a href="javascript:void(0)" class="try-demo submit-login-form">Submit</a>
+                </form>
+                <br>
+                <!-- <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button> -->
+                <!-- <button data-remodal-action="confirm" class="remodal-confirm">OK</button> -->
+            </div>
+        </div>
+        <div id="fsvs-body">
+            <div class="slide first-section">
+                <div class="gpl-header">
+                    <div class="col-md-6">
+                        <img class="logo" src="assets/img/logo.png" alt="">
+                    </div>
+                    <div class="col-md-6 actions-section">
+                        <a href="javascript:void(0)" class="opendemomodal">DEMO</a>
+                        <a href="javascript:void(0)" class="openloginmodal">LOGIN</a>
+                    </div>
+                </div>
+                <div class="gpl-top-content">
+                    <div class="container">
+                        <div class="contain">
+                            <p class="top-para-1">LOREM IPSUM<span class="para-shape"></span></p>
+                            
+                            <br>
+                            <p class="top-para-2">Lorem Ipsum Sample Dummy Text here in One line.</p>
+                            <p class="top-para-3">Lorem ipsum dolor sit amet, epicuri vituperata vim ad. Usu autem novum sonet id, in fuisset gubergren pri, qui verear equidem an. Pri virtute mentitum in. Est et graeco ceteros invenire.</p>
+                            <a href="javascript:void(0)" class="try-demo opendemomodal">Try Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide second-section">
+                <div class="container-fluid">
+                    <div class="col-md-6 tab-image">
+                        <img src="assets/img/tab.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 tab-content">
+                        <div class="text-content">
+                            <h1>Lorem Ipsum Sample Dummy Text here in One line.</h1>
+                            <p>Lorem ipsum dolor sit amet, epicuri vituperata vim ad. Usu autem novum sonet id, in fuisset gubergren pri, qui verear equidem an. Pri virtute mentitum in. Est et graeco ceteros invenire.</p>
+                            <ul>
+                                <li>Lorem ipsum sample text here in one line</li>
+                                <li>Lorem ipsum sample text here in second line</li>
+                                <li>Lorem ipsum sample text here in third line</li>
+                                <li>Lorem ipsum sample text here in fourth line</li>
+                            </ul>
+                            <a href="javascript:void(0)" class="try-demo opendemomodal">Try Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide third-section">
+                <div class="third-section-content container">
+                    <h1>LOREM IPSUM SAMPLE</h1>
+                    <h1>DUMMY TEXT HERE</h1>
+                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi inventore eveniet, ut velit qui autem ipsum recusandae, rerum fuga cupiditate repudiandae! Alias ad atque impedit soluta vitae eius fuga expedita? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi inventore eveniet, ut velit qui autem ipsum recusandae, rerum fuga </p>
+                    <div class="gpl-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide-content slide-type-1">
+                                        <div class="slider-icon">
+                                            <img src="assets/img/first.png" alt="">
+                                        </div>
+                                        <div class="slide-text">
+                                            <p class="slide-text-one">Lorem ipsum dolor.</p>
+                                            <p class="slide-text-two">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-content slide-type-2">
+                                        <div class="slider-icon">
+                                            <img src="assets/img/second.png" alt="">
+                                        </div>
+                                        <div class="slide-text">
+                                            <p class="slide-text-one">Lorem ipsum dolor.</p>
+                                            <p class="slide-text-two">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-content slide-type-3">
+                                        <div class="slider-icon">
+                                            <img src="assets/img/third.png" alt="">
+                                        </div>
+                                        <div class="slide-text">
+                                            <p class="slide-text-one">Lorem ipsum dolor.</p>
+                                            <p class="slide-text-two">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-content slide-type-1">
+                                        <div class="slider-icon">
+                                            <img src="assets/img/first.png" alt="">
+                                        </div>
+                                        <div class="slide-text">
+                                            <p class="slide-text-one">Lorem ipsum dolor.</p>
+                                            <p class="slide-text-two">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="third-section-footer">
+                    <div class="container">
+                        <p class="footer-content">2016 Great Event Team  |  Terms & Conditions  |  Privacy Policy</p>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 3,
+            paginationClickable: true,
+            spaceBetween: 30
+        });
+
+        var loginmodal = $('[data-remodal-id=loginmodal]').remodal({
+            hashTracking : false
+        });
+
+        var demomodal = $('[data-remodal-id=demomodal]').remodal({
+            hashTracking : false
+        });
+        $(document).on('click', '.opendemomodal', function(e){
+            e.preventDefault();
+            demomodal.open();
+            emptyform();
+        });
+        $(document).on('click', '.openloginmodal', function(e){
+            e.preventDefault();
+            loginmodal.open();
+            emptyform();
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(e){
+        fitContent();
+        $(document).on('click', '.submit-demo-form', function(e){
+            e.preventDefault();
+            $('input, select, textarea').removeClass('form-error');
+            $('.server-message').text('').hide();
+            var fname = $.trim($('input[name="fname"]').val());
+            var lname = $.trim($('input[name="lname"]').val());
+            var contact = $.trim($('input[name="contact"]').val());
+            var email = $.trim($('input[name="email"]').val());
+            var subject = $.trim($('input[name="subject"]').val());
+            var message = $.trim($('textarea[name="message"]').val());
+            var country = $.trim($('select[name="country"]').val());
+            var submitform = true;
+
+            // if( lname == '' ){
+            //     submitform = false;
+            //     $('input[name="lname"]').addClass('form-error');
+            // }
+            if( fname == '' ){
+                submitform = false;
+                $('input[name="fname"]').addClass('form-error');
+            }
+            if( contact == '' ){
+                submitform = false;
+                $('input[name="contact"]').addClass('form-error');
+            }
+
+            if( !validateEmail(email) ){
+                submitform = false;
+                $('input[name="email"]').addClass('form-error');
+            }
+            // if( subject == '' ){
+            //     submitform = false;
+            //     $('input[name="subject"]').addClass('form-error');
+            // }
+            // if( message == '' ){
+            //     submitform = false;
+            //     $('textarea[name="message"]').addClass('form-error');
+            // }
+            if( country == '' ){
+                submitform = false;
+                $('select[name="country"]').addClass('form-error');
+            }
+
+            if( submitform ){
+                $.ajax({
+                    url : '',
+                    type : 'post',
+                    data : {
+                        'firstname' : fname,
+                        'lastname' : lname,
+                        'contactno' : contact,
+                        'email' : email,
+                        'subject' : subject,
+                        'message' : message,
+                        'country' : country
+                    },
+                    success : function(data, status, jqxhr){
+                        var dat = JSON.parse(data);
+                        console.log(dat);
+                        if( dat.status == 'success' ){
+                            emptyform();
+                            $('.server-message').text(dat.message).removeClass('error').addClass('success').show();
+                        }else{
+                            $('.server-message').text(dat.message).removeClass('success').addClass('error').show();
+                        }
+                    },
+                    error : function(jqxhr, status, error){
+                        $('.server-message').text(dat.message).removeClass('success').addClass('error').show();
+                    }
+                });
+            }
+
+        });
+
+        $(document).on('click', '.submit-login-form', function(e){
+            e.preventDefault();
+            $('input, select, textarea').removeClass('form-error');
+            $('.server-message').text('').hide();
+            var loginemail = $.trim($('input[name="loginemail"]').val());
+            var loginpassword = $.trim($('input[name="loginpassword"]').val());
+            var submitform = true;
+
+            if( !validateEmail(loginemail) ){
+                submitform = false;
+                $('input[name="loginemail"]').addClass('form-error');
+            }
+ 
+            if( loginpassword == '' ){
+                submitform = false;
+                $('input[name="loginpassword"]').addClass('form-error');
+            }
+
+            if( submitform ){
+                $.ajax({
+                    url : '',
+                    type : 'post',
+                    data : {
+                        'email' : loginemail,
+                        'password' : loginpassword
+                    },
+                    success : function(data, status, jqxhr){
+                        var dat = JSON.parse(data);
+                        console.log(dat);
+                        if( dat.status == 'success' ){
+                            emptyform();
+                            $('.server-message').text(dat.message).removeClass('error').addClass('success').show();
+                        }else{
+                            $('.server-message').text(dat.message).removeClass('success').addClass('error').show();
+                        }
+                    },
+                    error : function(jqxhr, status, error){
+                        $('.server-message').text(dat.message).removeClass('success').addClass('error').show();
+                    }
+                });
+            }
+
+        })
+    });
+
+    function validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+
+    function emptyform(){
+        $('.server-message').text('').hide();
+        $('input, select, textarea').removeClass('form-error').val('');
+    }
+
+    function fitContent(){
+        var _height = $('.third-section').height() - 60;
+        $('.third-section-content').height(_height);
+    }
+
+    window.onresize = function(event) {
+        fitContent();
+    };
+</script>
